@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduPath | Online Courses</title>
+<meta name="description" content="EduPath - practical online courses in programming, data, and design.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="logo" href="#top">Edu<span>Path</span></a>
+    <ul class="nav-links">
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#cta" class="nav-btn">Start Learning</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="container">
+    <div class="eyebrow">Learn at your own pace</div>
+    <h1>Skills that get you <span>hired</span></h1>
+    <p class="subtitle">Practical, project-based courses in programming, data, and design. Taught step by step, priced for everyone, several of them free.</p>
+    <a class="btn btn-primary" href="#courses">Browse Courses</a>
+  </div>
+</header>
+
+<main class="container">
+
+  <section id="courses" class="courses-section">
+    <div class="section-head">
+      <h2>All Courses</h2>
+      <p id="results-count" class="muted"></p>
+    </div>
+
+    <div class="controls">
+      <input type="search" id="search-input" placeholder="Search courses, topics, instructors..." aria-label="Search courses">
+      <div id="category-filters" class="chips" role="group" aria-label="Filter by category"></div>
+    </div>
+
+    <div id="courses-grid" class="grid"></div>
+    <p id="empty-state" class="empty" hidden>No courses match your search. Try a different keyword or category.</p>
+  </section>
+
+  <section id="why" class="why-section">
+    <div class="section-head"><h2>Why EduPath?</h2></div>
+    <div class="grid three">
+      <div class="feature-card">
+        <div class="feature-icon">01</div>
+        <h3>Project-based</h3>
+        <p>Every course ends with a real project you can show in your portfolio, not just a certificate.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">02</div>
+        <h3>Made for our market</h3>
+        <p>Prices in EGP, free starter courses, and content designed around what local and remote employers ask for.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">03</div>
+        <h3>Lifetime access</h3>
+        <p>Pay once, learn forever. Rewatch lessons anytime and get all future updates of the course.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta" class="cta-section">
+    <h2>Start with a free course today</h2>
+    <p>HTML &amp; CSS, Python, and Git are completely free. No credit card needed.</p>
+    <a class="btn btn-primary" href="#courses" id="cta-free-btn">Show Free Courses</a>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">EduPath - a demo project by Ahmed Mohamed. Built with vanilla HTML, CSS, and JavaScript.</div>
+</footer>
+
+<!-- Course detail modal -->
+<div id="modal-overlay" class="modal-overlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button id="modal-close" class="modal-close" aria-label="Close">&times;</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
